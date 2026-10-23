@@ -1,0 +1,2 @@
+# app-ads.txt for Traki (https://studio-traki.github.io)
+google.com, pub-2822498411297588, DIRECT, f08c47fec0942fa0
