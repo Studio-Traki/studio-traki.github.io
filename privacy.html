@@ -24,15 +24,15 @@
 
   <main class="wrap doc">
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective October 28, 2026</p>
+    <p class="meta">Effective November 25, 2026</p>
 
     <div class="callout">
-      <p><strong>Short version:</strong> Anatomy Blitz has online features: a daily challenge, leaderboards, weekly leagues and friend challenges. For these, our own server in Germany keeps an anonymous player profile: a random player ID, a display name, your game language and platform, and your scores and XP. We don’t ask for your email or real name, and we don’t record your location or country. You can delete your online data from inside the game at any time. Your study progress stays on your phone. Eclipse Dash has no online features. Our games show ads through Google AdMob and sell optional purchases and subscriptions through the App Store (and later Google Play), with RevenueCat checking purchases. Those companies collect some data, described below. You can say no to ad tracking and change your ad choices at any time.</p>
+      <p><strong>Short version:</strong> Anatomy Blitz has online features: a daily challenge, leaderboards, weekly leagues and friend challenges. For these, our own server in Germany keeps an anonymous player profile: a random player ID, a display name, your game language and platform, and your scores and XP. We don’t ask for your email or real name, and we don’t record your location or country. You can delete your online data from inside the game at any time. Your study progress stays on your phone. Eclipse Dash has no online features. Light the Way Together is a browser game for two: online play passes your moves to your partner through our server, which keeps the room only in memory and keeps no record of your name or moves; our server logs keep your IP address for 14 days. Our mobile games show ads through Google AdMob and sell optional purchases and subscriptions through the App Store (and later Google Play), with RevenueCat checking purchases. Those companies collect some data, described below. You can say no to ad tracking and change your ad choices at any time.</p>
     </div>
 
     <h2>Who we are</h2>
-    <p>Traki (“Traki”, “we”, “us”) is the name under which Vaja Chelidze, Tbilisi, Georgia (the country), publishes mobile games. Vaja Chelidze is responsible for your data under this policy (the “controller” under EU and UK law). Contact: <a href="mailto:notvaja@gmail.com">notvaja@gmail.com</a>.</p>
-    <p>This policy covers our mobile games, our game server (the “Traki Platform”) and this website.</p>
+    <p>Traki (“Traki”, “we”, “us”) is the name under which Vaja Chelidze, Tbilisi, Georgia (the country), publishes games. Vaja Chelidze is responsible for your data under this policy (the “controller” under EU and UK law). Contact: <a href="mailto:notvaja@gmail.com">notvaja@gmail.com</a>.</p>
+    <p>This policy covers our games, on mobile and in the browser (including on game portals such as CrazyGames), our game server (the “Traki Platform”) and this website.</p>
 
     <h2>What we collect ourselves</h2>
     <h3 id="online">In Anatomy Blitz (online features)</h3>
@@ -56,6 +56,23 @@
     <h3>In Eclipse Dash</h3>
     <p>Nothing from inside the game. Game progress is saved only on your device. Deleting the game deletes it.</p>
 
+    <h3 id="light-the-way-together">In Light the Way Together (browser game)</h3>
+    <p>Light the Way Together is a game for two players. You can play on one keyboard, or online with a friend you invite with a room code or link. It has no accounts, no chat and no free text, and we don’t add any ads, analytics or trackers of our own.</p>
+    <p><strong>Playing on one keyboard</strong> doesn’t contact our server. Your progress, best times, settings and key bindings are saved only in your browser (local storage). We can’t see them. Clearing your browser’s site data deletes them.</p>
+    <p><strong>Playing online</strong> connects your browser to our relay server at api.traki.studio (Hetzner, Germany). The relay passes game messages between you and your partner in real time. Your partner’s browser connects only to our server, never directly to yours, so your partner never sees your IP address.</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Data</th><th>Why</th><th>How long</th></tr>
+        <tr><td><strong>IP address</strong>, held in the server’s memory while you are connected</td><td>To connect you, and to limit how many connections and rooms one address can open (abuse protection)</td><td>Dropped when you disconnect. Never written to the relay’s own logs.</td></tr>
+        <tr><td><strong>Room code</strong> (5 characters), your seat (host or guest), which character you play, “ready” status, and a random reconnect key</td><td>To put you and your partner in the same room, and let you rejoin after a dropped connection</td><td>In memory only, while the room is open. A dropped player’s seat is held for 2 minutes. When a room closes, the reconnect keys and names are wiped at once and the room code is deleted within 2 minutes.</td></tr>
+        <tr><td><strong>Display name</strong>: your CrazyGames username if you are logged in to CrazyGames, otherwise “Player”</td><td>To show your partner who they are playing with (CrazyGames asks multiplayer games to show usernames)</td><td>In memory only, while the room is open. Shown to your partner only. We don’t store it.</td></tr>
+        <tr><td><strong>Gameplay messages</strong>: positions, moves, level events and quick signals (“Here!”, “Wait”, “Go!” and the like)</td><td>To play together</td><td>Passed straight to your partner and never stored or logged.</td></tr>
+        <tr><td><strong>Server access logs</strong> of the connection: IP address, time, the address requested (without any search parameters), the result, and your browser’s user agent</td><td>Security, limiting abuse and fixing errors</td><td>14 days</td></tr>
+      </table>
+    </div>
+    <p>The relay’s own logs contain only event names and counts (for example, how many rooms are open). They never contain room codes, names, reconnect keys, IP addresses or game messages. While you are in an online room, your browser keeps the room code and reconnect key in this tab’s session storage so a page refresh can put you back in the room; it is cleared when you leave the room or close the tab.</p>
+    <p>From CrazyGames we read <strong>only your username</strong>. We don’t receive or store your CrazyGames user ID, login token, email or anything else about your CrazyGames account. CrazyGames itself is covered below.</p>
+
     <h3>Everywhere</h3>
     <ul>
       <li><strong>Emails you send us</strong> (support, “Report a content error”, “Report an ad”). We get your email address and whatever you write, and use it only to answer you.</li>
@@ -66,7 +83,7 @@
     <p><strong>Hetzner Online GmbH</strong> (Germany) hosts our server in its data centre in Falkenstein, Germany. Your online data, its backups and our server logs are stored there, in the EU. Hetzner processes this data only on our instructions, under a data processing agreement. No other company sits between the game and our server: we use no content delivery network or proxy. Our security certificate comes from Let’s Encrypt, which receives no player data.</p>
 
     <h2>What our partners collect</h2>
-    <p>Our games include software (SDKs) from the companies below. They collect data when the game runs and use it as described here and in their own policies.</p>
+    <p>Our mobile games include software (SDKs) from the companies below. They collect data when the game runs and use it as described here and in their own policies.</p>
 
     <h3>Google AdMob and Google’s consent tool (ads)</h3>
     <p>AdMob shows the ads in our free games and in the free version of Anatomy Blitz: optional reward ads you choose to watch, and occasional full-screen ads at natural breaks (never in the middle of a quiz or run). Google’s consent tool asks for your ad choices where the law requires it. To show, measure and, if you allow it, personalise ads, and to prevent fraud, Google may collect:</p>
@@ -81,6 +98,9 @@
 
     <h3>RevenueCat (purchases and subscriptions)</h3>
     <p>RevenueCat confirms your purchases and subscriptions so they work and can be restored. It receives a random ID created by the app (not linked to your name, Apple ID or our player ID), your purchase and subscription records, and basic device data (OS, app version, country and IP address). RevenueCat processes this data for us. Policy: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
+
+    <h3 id="crazygames">CrazyGames (Light the Way Together in the browser)</h3>
+    <p>Light the Way Together is published on CrazyGames, a game website run by Maxflow BV (Belgium). CrazyGames hosts the game’s files and runs its own website, player accounts, consent banner and any ads shown in or around the game. The game includes the CrazyGames SDK, which CrazyGames uses to run its site, its multiplayer invites and any ads. Any ads in the game come only through CrazyGames. CrazyGames is a separate, independent controller of the data it collects, under its own policy: <a href="https://www.crazygames.com/privacy-policy">crazygames.com/privacy-policy</a>. Use CrazyGames’ own settings and contact to manage that data. We don’t get CrazyGames’ ad or account data about you.</p>
 
     <h3>Apple and Google (stores and payments)</h3>
     <p>Apple (and Google, once our games are on Google Play) handles downloads, payments and subscriptions under its own policy. We never see your payment details. See <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a> and <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.</p>
@@ -97,6 +117,8 @@
         <tr><td>Counting active players and challenge participation (our own statistics)</td><td>Our legitimate interest in improving the game</td></tr>
         <tr><td>Personalised ads, and storing or reading ad data on your device</td><td>Your consent, given in the consent message. You can withdraw it at any time.</td></tr>
         <tr><td>Non-personalised ads, ad measurement, and fraud prevention</td><td>Our legitimate interest in funding free games and keeping ads safe, or your consent where the law requires it</td></tr>
+        <tr><td>Light the Way Together online play: connecting you, holding the room, relaying game messages and your display name to your partner</td><td>Performing our contract with you (providing the online play you asked for)</td></tr>
+        <tr><td>Light the Way Together: server access logs, per-address connection and room limits</td><td>Our legitimate interest in keeping the server secure and available</td></tr>
         <tr><td>Checking and restoring purchases and subscriptions</td><td>Performing our contract with you</td></tr>
         <tr><td>Answering support emails</td><td>Our legitimate interest in helping you, or performing our contract</td></tr>
       </table>
@@ -116,7 +138,8 @@
 
     <h2>Your rights</h2>
     <p>Depending on where you live (for example under the GDPR in the EU, the UK GDPR, or US state privacy laws), you may have the right to access, correct or delete your personal data, to object to or restrict its use, to data portability, to withdraw consent, and to opt out of the “sale” or “sharing” of personal data for targeted advertising. We don’t sell personal data for money. Personalised ads through AdMob may count as “sharing” under some US state laws. You can opt out by turning tracking off (iPhone), deleting your Advertising ID (Android), or using Privacy options in the game.</p>
-    <p>The fastest route for online data is the in-game deletion above. For anything else, email us. Include your player ID (Settings → Privacy → Player ID) if you have it. If you lost your device, give us your display name and roughly when you played, and we’ll do our best to find the profile. We answer within one month and help with requests to Google or RevenueCat. For purchase records, we may ask for the order ID from your Apple receipt.</p>
+    <p>Light the Way Together keeps nothing about you on our server after a room closes, except the access logs, which are deleted after 14 days. If you want us to delete log entries sooner, email us your IP address and roughly when you played.</p>
+    <p>The fastest route for Anatomy Blitz online data is the in-game deletion above. For anything else, email us. Include your player ID (Settings → Privacy → Player ID) if you have it. If you lost your device, give us your display name and roughly when you played, and we’ll do our best to find the profile. We answer within one month and help with requests to Google or RevenueCat. For purchase records, we may ask for the order ID from your Apple receipt.</p>
     <p>In the EU, EEA or UK you also have the right to complain to your local data protection authority.</p>
 
     <h2>How long data is kept</h2>
@@ -131,6 +154,8 @@
         <tr><td>Friend challenges and their results</td><td>Active for 14 days, deleted 30 days later</td></tr>
         <tr><td>Reports (including the reported name as it was shown)</td><td>Until resolved, then 12 months. Reports you sent are deleted with your profile.</td></tr>
         <tr><td>Banned profile</td><td>12 months after the ban, then deleted</td></tr>
+        <tr><td>Light the Way Together online rooms (room code, seats, display names, reconnect keys)</td><td>In memory only while the room is open; a dropped seat is held 2 minutes; deleted within 2 minutes after the room closes</td></tr>
+        <tr><td>Light the Way Together game messages</td><td>Not stored: passed straight to your partner</td></tr>
         <tr><td>Server logs (including IP addresses)</td><td>14 days</td></tr>
         <tr><td>Backups (kept on the same server in Germany)</td><td>14 days, then overwritten</td></tr>
         <tr><td>Support emails</td><td>Up to two years after the conversation ends</td></tr>
@@ -140,10 +165,10 @@
     <p>Google and RevenueCat keep data for the periods in their own policies. All communication between our games, our server and these services is encrypted in transit.</p>
 
     <h2>Children</h2>
-    <p>Our games are made for a general audience aged 13 and older (Anatomy Blitz is designed for students aged 16 and up) and are not directed at children under 13. We don’t knowingly collect personal data from children under 13. If you believe a child has used one of our games and data was collected, contact us and we’ll delete it.</p>
+    <p>Our games are made for a general audience aged 13 and older (Anatomy Blitz is designed for students aged 16 and up, and Light the Way Together is published on the part of CrazyGames meant for players aged 13 and up) and are not directed at children under 13. We don’t knowingly collect personal data from children under 13. If you believe a child has used one of our games and data was collected, contact us and we’ll delete it.</p>
 
     <h2>International transfers</h2>
-    <p>Our server, its backups and your online data are in the EU (Hetzner, Falkenstein, Germany). We run Traki from Georgia, so we access that data from Georgia. Google and RevenueCat are based in the United States and may process data there and in other countries. When data from the EU, EEA, UK or Switzerland goes abroad, they rely on approved safeguards, such as the European Commission’s Standard Contractual Clauses or the EU–US Data Privacy Framework, as described in their own policies and data processing terms.</p>
+    <p>Our server, its backups and your online data are in the EU (Hetzner, Falkenstein, Germany). We run Traki from Georgia, so we access that data from Georgia. CrazyGames is based in Belgium (EU). Google and RevenueCat are based in the United States and may process data there and in other countries. When data from the EU, EEA, UK or Switzerland goes abroad, they rely on approved safeguards, such as the European Commission’s Standard Contractual Clauses or the EU–US Data Privacy Framework, as described in their own policies and data processing terms.</p>
 
     <h2>Security</h2>
     <p>Connections are encrypted. Your device key is stored on our server only in hashed form, and our logs never contain it. Our admin panel has a single administrator account protected by two-factor sign-in. No system is perfectly secure, but we keep data to the minimum the games need.</p>
@@ -157,6 +182,7 @@
       <table>
         <tr><th>Game</th><th>Ads</th><th>Purchases</th><th>Other data</th></tr>
         <tr id="anatomy-blitz"><td>Anatomy Blitz</td><td>Google AdMob in the free version: optional reward ads (+10 reviews) and occasional full-screen ads after a quiz, never during one. Tracking prompt on iPhone; consent message in the EEA, UK and Switzerland. Pro has no ads.</td><td>Anatomy Blitz Pro: monthly or yearly subscription (yearly with a free trial for new subscribers) or a one-time lifetime purchase, through the App Store, checked by RevenueCat.</td><td>Anonymous online profile on our server (player ID, display name, language, platform, XP, scores, league and challenge results, reports), deletable in the app. Study progress stays on the device. No account, no email, no location, no camera, no contacts.</td></tr>
+        <tr><td><a href="#light-the-way-together">Light the Way Together</a> (browser, CrazyGames)</td><td>None of our own. Any ads come only through CrazyGames’ SDK under CrazyGames’ policy.</td><td>None.</td><td>Online play through our relay at api.traki.studio: IP address (in transit, and in server logs kept 14 days), room code, CrazyGames username or “Player” (shown to your partner), game messages relayed in memory only and never stored. Nothing about you is kept after a room closes. Local play and progress stay in your browser. No account, no chat, no location, no camera, no microphone.</td></tr>
         <tr id="eclipse-dash"><td>Eclipse Dash</td><td>Google AdMob: optional reward ads and capped ads between runs. Tracking prompt on iPhone; consent message in the EEA, UK and Switzerland.</td><td>Remove Ads and Supporter Pack (one-time purchases) through the App Store, checked by RevenueCat.</td><td>None. Progress is saved on your device only. No account, no location, no camera, no contacts.</td></tr>
       </table>
     </div>
