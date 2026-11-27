@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eclipse Dash — one-tap arcade for iPhone</title>
+  <meta name="description" content="One tap to flip. Graze obstacles, build an x5 combo and trigger the Eclipse. Free to play on iPhone, with ads and optional in-app purchases.">
+  <meta property="og:title" content="Eclipse Dash">
+  <meta property="og:description" content="One tap to flip. It starts slow, then it gets fast.">
+  <meta property="og:image" content="https://traki.studio/assets/eclipse-dash-art.jpg">
+  <meta name="theme-color" content="#07070D">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .ed-hero { position: relative; overflow: hidden; text-align: center; padding: 40px 0 32px; }
+    .ed-hero .orbit { border-color: rgba(255, 212, 71, .22); }
+    .ed-hero img.art { width: min(240px, 60vw); margin: 0 auto 20px; border-radius: 28px; border: 1px solid var(--line); position: relative; }
+    .ed-hero h1 { font-size: 40px; margin: 0 0 8px; position: relative; }
+    .ed-hero .lede { color: var(--muted); font-size: 19px; margin: 0 auto 24px; max-width: 28ch; position: relative; }
+    .badge { display: inline-block; position: relative; }
+    .badge img { height: 64px; width: auto; }
+    .badge:focus-visible { outline: 3px solid var(--sun); outline-offset: 4px; border-radius: 12px; }
+    .fine { color: var(--muted); font-size: 14px; margin: 14px 0 0; position: relative; }
+    .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .shots img { border-radius: 18px; border: 1px solid var(--line); }
+    .points { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    .points li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; color: #CFCFEA; }
+    .points b { color: var(--text); }
+    .cta-end { text-align: center; padding-bottom: 56px; }
+    .credit { font-size: 12px; color: var(--muted); max-width: 70ch; }
+    @media (max-width: 640px) {
+      .ed-hero { padding-top: 28px; }
+      .ed-hero h1 { font-size: 32px; }
+      .shots { grid-template-columns: repeat(3, 70%); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
+      .shots img { scroll-snap-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/logo.svg" alt="Traki" width="113" height="36"></a>
+      <nav class="nav">
+        <a href="./#games">Games</a>
+        <a href="support.html#eclipse-dash">Support</a>
+        <a href="privacy.html#eclipse-dash">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="ed-hero">
+      <div class="orbit" aria-hidden="true"></div>
+      <div class="wrap">
+        <img class="art" src="assets/eclipse-dash-art.jpg" alt="Eclipse Dash: a glowing eclipse ring" width="720" height="720">
+        <h1>Eclipse Dash</h1>
+        <p class="lede">One tap to flip. It starts slow, then it gets fast.</p>
+        <a class="badge" href="https://apps.apple.com/us/app/eclipse-dash/id6826334167"><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="192" height="64"></a>
+        <p class="fine">Free to play on iPhone. Contains ads and optional in-app purchases.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <div class="shots">
+          <img src="assets/ed-2-combo.jpg" alt="Grazing obstacles to build a combo" width="600" height="1303" loading="lazy">
+          <img src="assets/ed-3-eclipse.jpg" alt="The Eclipse: every point counts double" width="600" height="1303" loading="lazy">
+          <img src="assets/ed-1-title.jpg" alt="Eclipse Dash title screen" width="600" height="1303" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <ul class="points">
+          <li><b>Tap to flip</b> between the inside and outside of the ring.</li>
+          <li><b>Graze obstacles</b> at the last moment for bonus points and build up to an x5 combo.</li>
+          <li><b>Trigger the Eclipse</b>, where every point counts double.</li>
+          <li><b>A new Daily Run every day.</b> Short runs, one-tap retry.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="cta-end">
+      <div class="wrap">
+        <a href="https://apps.apple.com/us/app/eclipse-dash/id6826334167">Get Eclipse Dash on the App Store</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Traki</span>
+      <nav>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <p class="credit">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+    </div>
+  </footer>
+</body>
+</html>
